@@ -43,4 +43,29 @@ data__base = open("ventas_base.db").read
 #array modified
 param = data__base.split(',')
 
+#transforming values to floating numbers and pushing changes to original array
+param.map! do | e |
+    e = e.to_f
+end
+
+#pushing to an empy array the results
+first_semester = []
+second_semester = []
+
+for i in 0..11 do
+    if ( i <= 6 )
+        first_semester.push (param[ i ] * 1.10).truncate( 2 )
+    else
+        first_semester.push param[ i ].truncate( 2 )
+    end
+end
+
+for i in 0..11 do
+    if ( i >= 5 )
+        second_semester.push (param[ i ] * 1.20).truncate( 2 )
+    else
+        second_semester.push param[ i ].truncate( 2 )
+    end
+end
+
 
