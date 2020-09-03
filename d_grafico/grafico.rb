@@ -11,4 +11,4 @@ def chart( param )
     puts
 end
 
-chart([5, 3, 2, 5, 10])
+# chart([5, 3, 2, 5, 10])
