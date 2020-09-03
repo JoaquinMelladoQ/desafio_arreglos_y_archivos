@@ -8,7 +8,7 @@ def chart( param )
     1.upto( maximum ) do | i |
         print " #{ i }"
     end
-    puts
+    print
 end
 
 # chart([5, 3, 2, 5, 10])
