@@ -27,3 +27,18 @@
 # Hasta qué índice se debe leer el arreglo
 # Investigar respecto a ruby format number
 # El archivo con el que se probará el ejercicio tendrá distintos datos.
+
+#creating method total sales
+def total_sales( param )
+    sum = 0
+    param.each do | e |
+        sum += e
+    end
+    return sum
+end
+
+#changing values to float number, forcing changes to an array
+param.map! do | e |
+    e = e.to_f
+end
+
