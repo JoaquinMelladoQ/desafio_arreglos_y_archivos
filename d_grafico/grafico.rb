@@ -30,7 +30,7 @@ def chart( param )
     1.upto( maximum ) do | i |
         print " #{ i }"
     end
-    return
+    puts
 end
 
 chart([5, 3, 2, 5, 10])
