@@ -12,3 +12,15 @@
 # El nombre siempre será el primer elemento.
 # Todos los alumnos tendrán la misma cantidad de notas.
 # Cuidado con los tipos de datos, el arreglo contiene strings y números.
+
+#creating method
+def nota_mas_alta( param )
+    notas_mas_altas = []
+    param.each do | e |
+        e.select! { | x | x.class == Integer }
+        notas_mas_altas.push e.max()
+    end
+    return notas_mas_altas
+end
+
+
