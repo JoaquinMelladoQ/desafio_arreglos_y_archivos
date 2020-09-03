@@ -68,4 +68,8 @@ for i in 0..11 do
     end
 end
 
+#using arrays to sending to method and new file
+first_semester_total = total_sales(first_semester)
+second_semester_total = total_sales(second_semester)
+
 
