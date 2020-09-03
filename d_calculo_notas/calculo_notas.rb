@@ -26,5 +26,9 @@ end
 require "csv"
 data__base = CSV.open("notas.data", converters: :all).readlines
 
+#testing
+puts nota_mas_alta(data__base[ 0 ])
+puts nota_mas_alta(data__base[ 1 ])
+
 
 
