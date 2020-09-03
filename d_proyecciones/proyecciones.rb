@@ -40,4 +40,7 @@ end
 #reading data from file
 data__base = open("ventas_base.db").read
 
+#array modified
+param = data__base.split(',')
+
 
