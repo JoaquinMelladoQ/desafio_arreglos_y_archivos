@@ -72,4 +72,10 @@ end
 first_semester_total = total_sales(first_semester)
 second_semester_total = total_sales(second_semester)
 
+#creating new file
+open("resultados.data", "w") do | file |
+    file << "#{first_semester_total}\n"
+    file << "#{second_semester_total}"
+end
+
 
