@@ -23,4 +23,10 @@ def nota_mas_alta( param )
     return notas_mas_altas
 end
 
+#requiring to read data
+require "csv"
+data__base = CSV.open("notas.data", converters: :all).readlines 
+
+
+
 
