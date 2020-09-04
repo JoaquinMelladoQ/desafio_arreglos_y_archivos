@@ -7,11 +7,9 @@ def total_sales( param )
     return sum
 end
 
-data__base = open("ventas_base.db").read
+data__base = open("ventas_base.db").read.chomp.split(',')
 
-param = data__base.split(',')
-
-param_data = param.map do | e |
+param_data = data__base.map do | e |
     e = e.to_f
 end
 
